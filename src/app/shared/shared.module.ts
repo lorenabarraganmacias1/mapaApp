@@ -1,10 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomePageComponent } from './pages/home-page/home-page.component';
-import { AboutPageComponent } from './pages/home-page/about-page/about-page.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ContactComponent } from './components/contact/contact.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ContactComponent } from './pages/contact-page/contact.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { SearchBoxComponent } from './components/search-box/search-box.component';
+
 
 
 
@@ -13,7 +15,8 @@ import { ContactComponent } from './components/contact/contact.component';
     HomePageComponent,
     AboutPageComponent,
     SidebarComponent,
-    ContactComponent
+    ContactComponent,
+    SearchBoxComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +26,8 @@ import { ContactComponent } from './components/contact/contact.component';
     HomePageComponent,
     AboutPageComponent,
     SidebarComponent,
-    ContactComponent
+    ContactComponent,
+    SearchBoxComponent
 
   ]
 })
