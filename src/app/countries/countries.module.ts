@@ -14,12 +14,16 @@ import { SharedModule } from '../shared/shared.module';
     ByCapitalPageComponent,
     ByCountryPageComponent,
     ByRegionPageComponent,
-    CountryPageComponent
+    CountryPageComponent,
+
   ],
   imports: [
     CommonModule,
     CountriesRoutingModule,
     SharedModule
+  ],
+  exports:[
+    ByCapitalPageComponent
   ]
 })
 export class CountriesModule { }
